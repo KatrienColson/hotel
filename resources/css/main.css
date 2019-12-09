@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Mansalva|Merriweather&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+head {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  min-height: 100%;
+}
+
+html {
+  min-height: 100%;
+}
+
+.container-header {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(180deg, #191919, rgba(25, 25, 25, 0.5));
+  z-index: 1;
+  height: 30vh;
+  width: 100%;
+}
+.container-header h1.shimmer {
+  font-family: "Great Vibes", cursive;
+  padding: 0 20px 0 0;
+  display: inline;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #AD8D55;
+  font-size: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+h1 {
+  color: #AD8D55;
+  font-size: 3em;
+}
+
+.shimmer {
+  color: rgba(173, 141, 85, 0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#AD8D55), to(#AD8D55), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#AD8D55), to(#AD8D55), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#AD8D55), to(#AD8D55), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #191919;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #191919;
+  justify-content: flex-end;
+}
+.nav-bar ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+li {
+  list-style-type: none;
+  flex-direction: row;
+  padding: 1em 1.5em;
+}
+li :hover {
+  background-color: #AD8D55;
+  color: #191919;
+}
+li a {
+  color: #AD8D55;
+  text-decoration: none;
+  padding: 1em 1.5em;
+}
+
+.photo {
+  /* The image used */
+  background-image: url("../img/hotel-oude-eycke-sfeer.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.practical-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #191919;
+  justify-content: center;
+}
+
+.practical-all {
+  margin: 0 10em 0 10em;
+}
+
+.title-practical {
+  flex-direction: column;
+  font-size: 2em;
+  font-family: "Merriweather", serif;
+  color: #AD8D55;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.box-photo {
+  width: 45%;
+  height: auto;
+  border: 1px solid white;
+}
+.box-photo .kamer1 {
+  width: 100%;
+}
+
+.box-info {
+  width: 45%;
+  height: auto;
+  padding-right: 1em;
+  border-right: 1px solid #AD8D55;
+  border-bottom: 1px solid #AD8D55;
+  color: #AD8D55;
+}
+.box-info h2 {
+  text-align: end;
+}
+.box-info p {
+  font-size: 1em;
+  line-height: 1.75em;
+  padding: 1em;
+}
+.box-info li {
+  padding: 0;
+  margin-top: 1em;
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+.slideshow-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mySlides {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(25, 25, 25, 0.5);
+}
+.mySlides img {
+  width: 100%;
+}
+.mySlides .p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Merriweather", serif;
+  color: #AD8D55;
+  font-size: 2rem;
+}
+
+.pijlen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  /*position: absolute;*/
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #d89f9f;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

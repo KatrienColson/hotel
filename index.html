@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Een top hotel in limburg!">
+  <link rel="icon" type="image/png" href="resources/img/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="resources/css/main.css">
+  <title>Hotel Oude Eycke</title>
+</head>
+<body>
+  <header>
+    <div class="container-header">
+      <h2>Welkom bij</h2>
+      <h1 class="shimmer">Hotel Oude Eycke</h1>
+    </div>
+  </header>
+  
+
+  <nav class="nav-bar">
+    <div class="container-all">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Practical info</a></li>
+        <li><a href="#">Reservation</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  
+  <main class="photo-background">
+    <div class="photo">
+    </div>
+
+    <div class="practical-info-container" id="practical-info-link"> 
+      <div class="practical-all">
+        <div class="title-practical">
+                Practicle info
+        </div>
+        <div class="boxen-practical">
+          <!-- <div class="box-photo">
+            <img class="kamer1" src="resources/img/kamer1.jpg" alt="Kamer1">
+          </div> -->
+
+          <div class="slideshow-container">
+
+              <div class ="mySlides fade">
+                  <div class="extra-container">
+                          
+                      <div class="numbertext">1 / 9
+                      </div>
+                          <img src="resources/img/kamer1.jpg">
+                      <div class="p">kamer 1
+                      </div>
+                  </div>  
+              
+              </div><!--einde mySlides fade GRID-->
+  
+              <div class="mySlides fade">
+                  <div class="extra-container">
+                         
+                      <div class="numbertext">2 / 9
+                      </div>
+                          <img src="resources/img/kamer2.jpg">
+                      <div class="p">Kamer 2
+                      </div>
+                  
+                  </div>
+                     
+              </div>
+   
+          </div>
+  
+              <div class="pijlen">
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+                  
+                  
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                                    
+                  </div>
+  
+              </div>
+           
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="box-info">
+            <h2>De Kamer</h2>
+            <p>Het warme interieur en de moderne materialen creëren de ideale mix voor een ontspannen en comfortabel verblijf.
+               Uw luxueus ingerichte en sfeervol verlichte slaapkamer (20 - 28 m2) omvat de volgende faciliteiten:</p>
+              <li>twee tegen elkaar geschoven extra lange éénpersoons(boxspring)bedden,</li>
+              <li>een bureau met bureaustoel,</li>
+              <li>een telefoon,</li>
+              <li>een aansluiting op het internet,</li>
+              <li>een radio en kabel-tv met breedbeeld LCD-scherm en afstandsbediening.</li>   
+            <p>Op verzoek kunnen we gratis een babybedje bijplaatsen; mits betaling kan er eveneens gezorgd worden voor een extra (kinder)bed op de kamer.</p> 
+            <p>Ontspannend genieten kan u ook in de mooie, aangrenzende badkamer 
+              6 – 15,7 m2) die uitgerust is met moderne designelementen zoals 
+              douche, dubbele wastafel en toilet; naast een haardroger vindt 
+              u er ook andere benodigdheden zoals shampoo, douchegel, douchekapje 
+              en schoenpoetsdoekjes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+  </main>
+  <footer>
+
+  </footer>
+<!--javascript-->
+  <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+  </script>   
+
+
+
+</body>
+</html>
