@@ -1,6 +1,7 @@
+//achtergrondfoto
 .photo {
   /* The image used */
-  background-image: url("../img/hotel-oude-eycke-sfeer.jpg");
+  background-image: url("../img/lamp.jpg");
 
   /* Set a specific height */
   min-height: 500px; 
@@ -11,6 +12,21 @@
   background-repeat: no-repeat;
   background-size: cover; 
 }
+
+.photo-badkamer {
+  /* The image used */
+  background-image: url("../img/kroon.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+//begin praktische info
 .practical-info-container{
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +37,7 @@
 }
 .practical-all{
   margin: 0 10em 0 10em;
+  padding-bottom: 2em;
 }
 .title-practical{
   flex-direction: column;
@@ -31,24 +48,18 @@
   padding-top: 2em; 
   padding-bottom: 2em;
 }
-// .boxen-practical{
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-// }
-.box-photo{
-  width: 45%;
-  height: auto;
-  border: 1px solid white;
-
-  .kamer1{
-    width: 100%;
-  }
+//begin container met foto & slidshow & info
+ .boxen-practical{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
+//box info kamers
 .box-info{
   width: 45%;
   height: auto;
+  justify-content: flex-end;
   padding-right: 1em;
   border-right: 1px solid $border-light;
   border-bottom: 1px solid $border-light;
@@ -68,13 +79,14 @@
     margin-left: 1em;
   }
 }
+//box slidshow kamers
 .slideshow-container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 45%;
+  height: auto;
+  border-top: 1px solid $border-light;
+  border-left: 1px solid $border-light;
 }
-.mySlides{
+.mySlides-kamer, .mySlides-eetruimte {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -83,25 +95,28 @@
   padding: 1.0rem;
   box-shadow: 0px 0px 10px 0px rgba(25,25,25,0.5);
   img{
-    // width: 180px;
-    // height: 150px;
     width: 100%;
   }
-  .p{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-family: $text-nav;
-    color: $text-light;
-    font-size: 2rem;
-  }
+   .p{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: space-evenly;
+     font-family: $text-nav;
+     color: $text-light;
+     font-size: 1em;
+   }
+}
+.numbertext{
+  font-family: $text-nav;
+  color:$text-light;
+  padding-bottom: 1em;
 }
 .pijlen{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1em;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -113,7 +128,7 @@
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color:  rgb(216, 159, 159);
+  color:  $pijl-light;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
@@ -126,15 +141,15 @@
 cursor: pointer;
 height: 12px;
 width: 12px;
-margin: 0 2px;
-background-color: #bbb;
+margin: 0 1px;
+background-color: $pijl-light;
 border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-background-color: #717171;
+background-color: #fff;
 }
 
 /* Fading animation */

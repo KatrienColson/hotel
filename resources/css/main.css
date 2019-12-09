@@ -34,7 +34,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(180deg, #191919, rgba(25, 25, 25, 0.5));
+  background-color: #191919;
   z-index: 1;
   height: 30vh;
   width: 100%;
@@ -44,6 +44,7 @@ html {
   padding: 0 20px 0 0;
   display: inline;
   margin-bottom: 0;
+  letter-spacing: 0.15em;
 }
 
 h2 {
@@ -145,7 +146,19 @@ li a {
 
 .photo {
   /* The image used */
-  background-image: url("../img/hotel-oude-eycke-sfeer.jpg");
+  background-image: url("../img/lamp.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-badkamer {
+  /* The image used */
+  background-image: url("../img/kroon.jpg");
   /* Set a specific height */
   min-height: 500px;
   /* Create the parallax scrolling effect */
@@ -166,6 +179,7 @@ li a {
 
 .practical-all {
   margin: 0 10em 0 10em;
+  padding-bottom: 2em;
 }
 
 .title-practical {
@@ -178,18 +192,17 @@ li a {
   padding-bottom: 2em;
 }
 
-.box-photo {
-  width: 45%;
-  height: auto;
-  border: 1px solid white;
-}
-.box-photo .kamer1 {
-  width: 100%;
+.boxen-practical {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .box-info {
   width: 45%;
   height: auto;
+  justify-content: flex-end;
   padding-right: 1em;
   border-right: 1px solid #AD8D55;
   border-bottom: 1px solid #AD8D55;
@@ -211,13 +224,13 @@ li a {
 }
 
 .slideshow-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 45%;
+  height: auto;
+  border-top: 1px solid #AD8D55;
+  border-left: 1px solid #AD8D55;
 }
 
-.mySlides {
+.mySlides-kamer, .mySlides-eetruimte {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -226,24 +239,30 @@ li a {
   padding: 1rem;
   box-shadow: 0px 0px 10px 0px rgba(25, 25, 25, 0.5);
 }
-.mySlides img {
+.mySlides-kamer img, .mySlides-eetruimte img {
   width: 100%;
 }
-.mySlides .p {
+.mySlides-kamer .p, .mySlides-eetruimte .p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
   font-family: "Merriweather", serif;
   color: #AD8D55;
-  font-size: 2rem;
+  font-size: 1em;
+}
+
+.numbertext {
+  font-family: "Merriweather", serif;
+  color: #AD8D55;
+  padding-bottom: 1em;
 }
 
 .pijlen {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1em;
 }
 
 /* Next & previous buttons */
@@ -256,7 +275,7 @@ li a {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #d89f9f;
+  color: #AD8D55;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
@@ -269,15 +288,15 @@ li a {
   cursor: pointer;
   height: 12px;
   width: 12px;
-  margin: 0 2px;
-  background-color: #bbb;
+  margin: 0 1px;
+  background-color: #AD8D55;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #fff;
 }
 
 /* Fading animation */
