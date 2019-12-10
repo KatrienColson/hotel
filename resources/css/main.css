@@ -38,6 +38,8 @@ html {
   z-index: 1;
   height: 30vh;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 .container-header h1.shimmer {
   font-family: "Great Vibes", cursive;
