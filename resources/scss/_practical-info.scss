@@ -18,7 +18,7 @@
   background-image: url("../img/kroon.jpg");
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 400px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -66,6 +66,8 @@
   color: $text-light;
   h2{
     text-align: end;
+    font-family: $text-head;
+    letter-spacing: 0.15em;
   }
   p{
     font-size: 1em;
@@ -86,7 +88,7 @@
   border-top: 1px solid $border-light;
   border-left: 1px solid $border-light;
 }
-.mySlides-kamer, .mySlides-eetruimte {
+.mySlides-kamer, .mySlides-ontbijtruimte {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -137,7 +139,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot-kamer, .dot-ontbijtruimte {
 cursor: pointer;
 height: 12px;
 width: 12px;

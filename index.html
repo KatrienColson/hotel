@@ -38,7 +38,7 @@
       <div class="practical-info-container" id="practical-info-link"> 
         <div class="practical-all">
           <div class="title-practical">
-                  Praktische info KAMER
+                  Praktische info
           </div>
           <div class="boxen-practical">
 
@@ -140,19 +140,19 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                   </div>
                   <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span>
-                      <span class="dot" onclick="currentSlide(4)"></span>
-                      <span class="dot" onclick="currentSlide(5)"></span>
-                      <span class="dot" onclick="currentSlide(6)"></span>
-                      <span class="dot" onclick="currentSlide(7)"></span>
-                      <span class="dot" onclick="currentSlide(8)"></span>
-                      <span class="dot" onclick="currentSlide(9)"></span>                
+                      <span class="dot-kamer" onclick="currentSlide(1)"></span> 
+                      <span class="dot-kamer" onclick="currentSlide(2)"></span> 
+                      <span class="dot-kamer" onclick="currentSlide(3)"></span>
+                      <span class="dot-kamer" onclick="currentSlide(4)"></span>
+                      <span class="dot-kamer" onclick="currentSlide(5)"></span>
+                      <span class="dot-kamer" onclick="currentSlide(6)"></span>
+                      <span class="dot-kamer" onclick="currentSlide(7)"></span>
+                      <span class="dot-kamer" onclick="currentSlide(8)"></span>
+                      <span class="dot-kamer" onclick="currentSlide(9)"></span>                
                   </div>
             </div><!--einde "slideshow-container"-->
 
-            <!--begin tekst kamers-->
+<!--begin tekst kamers-->
             <div class="box-info">
               <h2>De Kamer</h2>
               <p>Het warme interieur en de moderne materialen creëren de ideale mix voor een ontspannen en comfortabel verblijf.
@@ -176,49 +176,73 @@
     <section class="photo-background">
         <div class="photo-badkamer">
         </div>
-    <!--Eetruimte-->
+
+<!--Eetruimte-->
         <div class="practical-info-container" id="practical-info-link"> 
           <div class="practical-all">
             <div class="title-practical">
-                    Praktische info ONTBIJTRUIMTE
+                    Praktische info 
             </div>
             <div class="boxen-practical">
-  
+
+<!--foto 1-->  
               <div class="slideshow-container">
-    
-                  <div class ="mySlides-eetruimte fade">
+                  <div class ="mySlides-ontbijtruimte fade">
                       <div class="extra-container"> 
-                        <div class="numbertext">1 / 2
+                        <div class="numbertext">1 / 4
                         </div>
                             <img src="resources/img/eetruimte5.jpg">
-                        <div class="p">Eetruimte  
+                        <div class="p">Ontbijtruimte  
                         </div>
                       </div>
                   </div>
-                  <div class ="mySlides-eetruimte fade">
+<!--foto 2-->                 
+                  <div class ="mySlides-ontbijtruimte fade">
                     <div class="extra-container"> 
-                        <div class="numbertext">1 / 2
+                        <div class="numbertext">2 / 4
                         </div>
                             <img src="resources/img/eetruimte1.jpg">
                         <div class="p">Eetruimte 
                         </div>
                     </div>
                   </div>
+
+<!--foto 3-->
+                    <div class ="mySlides-ontbijtruimte fade">
+                      <div class="extra-container"> 
+                          <div class="numbertext">3 / 4
+                          </div>
+                              <img src="resources/img/eetruimte3.jpg">
+                          <div class="p">Eetruimte 
+                          </div>
+                      </div>
+                  </div>
+
+<!--foto 4-->
+                    <div class ="mySlides-ontbijtruimte fade">
+                      <div class="extra-container"> 
+                          <div class="numbertext">4 / 4
+                          </div>
+                              <img src="resources/img/eetruimte4.jpg">
+                          <div class="p">Eetruimte 
+                          </div>
+                      </div>
+                  </div>
+
                     <!--begin pijlen en dotten-->
                     <div class="pijlen">
                       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                       <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                     <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>                
+                        <span class="dot-ontbijtruimte" onclick="currentSlide(1)"></span> 
+                        <span class="dot-ontbijtruimte" onclick="currentSlide(2)"></span> 
+                        <span class="dot-ontbijtruimte" onclick="currentSlide(3)"></span>
+                        <span class="dot-ontbijtruimte" onclick="currentSlide(4)"></span>               
                     </div>
               </div><!--einde "slideshow-container"-->
   
-              <!--begin tekst kamers-->
+              <!--begin tekst eetruimte-->
               <div class="box-info">
                 <h2>De Eetruimte</h2>
                 <p>Na een heerlijke nacht kan u zich in de gezellige ontbijtruimte (35 m2) laten verwennen door een uitgebreid ontbijtbuffet. Dit omvat zonder twijfel voor elk wat wils en is dan ook, tussen 8u en 10u, de ideale start voor een leuke dag.</p>
@@ -263,7 +287,7 @@
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides-kamer");
-        var dots = document.getElementsByClassName("dot");
+        var dots = document.getElementsByClassName("dot-kamer");
         if (n > slides.length) {slideIndex = 1}    
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
@@ -275,6 +299,36 @@
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
       }
+
+
+//ONTBIJTRUIMTE
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides-ontbijtruimte");
+        var dots = document.getElementsByClassName("dot-ontbijtruimte");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
 
   </script>   
 

@@ -62,62 +62,11 @@ h1 {
 }
 
 .shimmer {
-  color: rgba(173, 141, 85, 0.1);
-  background: -webkit-gradient(linear, left top, right top, from(#AD8D55), to(#AD8D55), color-stop(0.5, #fff));
-  background: -moz-gradient(linear, left top, right top, from(#AD8D55), to(#AD8D55), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#AD8D55), to(#AD8D55), color-stop(0.5, #fff));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  background-size: 125px 100%;
+  background: linear-gradient(to right, #AD8D55, #AD8D55, #cdba99 70%);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
-  animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #191919;
+  -webkit-text-fill-color: transparent;
 }
 
-@-moz-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@-webkit-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@-o-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -162,7 +111,7 @@ li a {
   /* The image used */
   background-image: url("../img/kroon.jpg");
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -212,6 +161,8 @@ li a {
 }
 .box-info h2 {
   text-align: end;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 0.15em;
 }
 .box-info p {
   font-size: 1em;
@@ -232,7 +183,7 @@ li a {
   border-left: 1px solid #AD8D55;
 }
 
-.mySlides-kamer, .mySlides-eetruimte {
+.mySlides-kamer, .mySlides-ontbijtruimte {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -241,10 +192,10 @@ li a {
   padding: 1rem;
   box-shadow: 0px 0px 10px 0px rgba(25, 25, 25, 0.5);
 }
-.mySlides-kamer img, .mySlides-eetruimte img {
+.mySlides-kamer img, .mySlides-ontbijtruimte img {
   width: 100%;
 }
-.mySlides-kamer .p, .mySlides-eetruimte .p {
+.mySlides-kamer .p, .mySlides-ontbijtruimte .p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -286,7 +237,7 @@ li a {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot-kamer, .dot-ontbijtruimte {
   cursor: pointer;
   height: 12px;
   width: 12px;
