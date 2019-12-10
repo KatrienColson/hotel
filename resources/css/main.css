@@ -44,7 +44,6 @@ html {
 .container-header h1.shimmer {
   font-family: "Great Vibes", cursive;
   padding: 0 20px 0 0;
-  display: inline;
   margin-bottom: 0;
   letter-spacing: 0.15em;
 }
@@ -95,7 +94,7 @@ li a {
   padding: 1em 1.5em;
 }
 
-.photo {
+.photo-kamer {
   /* The image used */
   background-image: url("../img/lamp.jpg");
   /* Set a specific height */
@@ -107,11 +106,23 @@ li a {
   background-size: cover;
 }
 
-.photo-badkamer {
+.photo-ontbijtruimte {
   /* The image used */
   background-image: url("../img/kroon.jpg");
   /* Set a specific height */
   min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-zaal {
+  /* The image used */
+  background-image: url("../img/blauwesteen.jpg");
+  /* Set a specific height */
+  min-height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -183,19 +194,21 @@ li a {
   border-left: 1px solid #AD8D55;
 }
 
-.mySlides-kamer, .mySlides-ontbijtruimte {
+.mySlides-kamer, .mySlides-ontbijtruimte, .mySlides-zaal {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  padding: 1rem;
-  box-shadow: 0px 0px 10px 0px rgba(25, 25, 25, 0.5);
+  padding: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  box-shadow: 0px 0px 10px 0px rgba(173, 141, 85, 0.5);
 }
-.mySlides-kamer img, .mySlides-ontbijtruimte img {
-  width: 100%;
+.mySlides-kamer img, .mySlides-ontbijtruimte img, .mySlides-zaal img {
+  height: 250px;
 }
-.mySlides-kamer .p, .mySlides-ontbijtruimte .p {
+.mySlides-kamer .p, .mySlides-ontbijtruimte .p, .mySlides-zaal .p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -216,6 +229,7 @@ li a {
   flex-direction: row;
   justify-content: center;
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 /* Next & previous buttons */
@@ -230,14 +244,14 @@ li a {
   margin-top: -22px;
   color: #AD8D55;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
 /* The dots/bullets/indicators */
-.dot-kamer, .dot-ontbijtruimte {
+.dot-kamer, .dot-ontbijtruimte, .dot-zaal {
   cursor: pointer;
   height: 12px;
   width: 12px;
