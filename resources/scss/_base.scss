@@ -20,6 +20,19 @@ body{
 html{
   min-height: 100%;
 }
+//reserveer knop
+.reserveer-btn{
+  padding: 1.2em 1.5em;
+  font-family: $text-nav;
+  background-color: #E04644;
+  border: none;
+  color: $text-dark;
+  font-weight: bold;
+}
+.reserveer-btn:hover{
+  background-color: $btn-bckgr-light-to-dark;
+  color: $text-light;
+}
 
 
 // @media screen and (max-width: 320px) smartphone

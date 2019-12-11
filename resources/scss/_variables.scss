@@ -1,5 +1,6 @@
 //achtergrond header
 $bckgrnd-color: #191919;
+$backgrnd-color-light: #AD8D55;
 
 //tekst kleur in donkere achtergrond
 $text-light: #AD8D55;
@@ -13,8 +14,12 @@ $text-nav: 'Merriweather', serif;
 $text-head: 'Great Vibes', cursive;
 //buttons
 $btn-bckgr-dark-to-light: #AD8D55;
+$btn-bckgr-light-to-dark: #191919;
 //border
 $border-light: #AD8D55;
 $border-dark: #191919;
 //kleur pijlen
 $pijl-light: #AD8D55;
+//border with shadow
+$box-shadow-dark: 0px 0px 10px 0px rgba(25, 25, 25, 0.5);
+$box-shadow-light: 0px 0px 10px 0px rgba(173, 141, 85, 0.5);

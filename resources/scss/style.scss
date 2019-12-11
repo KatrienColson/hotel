@@ -5,9 +5,15 @@
 // abstract
 @import "variables";
 @import "base";
+@import "bcgrimg";
 
 //pages
 @import "header";
 @import "nav";
+//achtergrondfoto
 @import "practical-info";
-@import "prijs";
+@import "check-in";
+@import "price";
+@import "reservation";
+@import "location";
+@import "about-us";

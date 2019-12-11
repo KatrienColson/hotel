@@ -1,0 +1,67 @@
+.prijs{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #AD8D55;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.container-prijs{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  //margin: 0 10em 0 10em;
+  //padding-top: 2em;
+  //padding-bottom: 2em;
+}
+.title-prijs{
+  width: 100%;
+  text-align: center;
+}
+.title-prijs h1{
+  color: $text-dark;
+  font-family: $text-head;
+  font-size: 2em;
+}
+//table prijs
+.inhoud-prijs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  //padding-top: 2em;
+  padding-bottom: 2em;
+}
+.title-prijs{
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.5em;
+  padding-top: 2em;
+}
+.container-btn{
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding-top: 0.5em;
+}
+.kamer-1-persoon, .kamer-2-personen, .extra-optie{
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  border: 1px solid $border-dark;
+  box-shadow: $box-shadow-dark;
+  padding: 0.5em;
+}
+th{
+  text-align: center;
+  font-family: $text-nav;
+  padding-bottom: 1em;
+}
+td{
+  text-align: center;
+  font-family: $text-nav;
+}

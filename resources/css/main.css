@@ -27,6 +27,104 @@ html {
   min-height: 100%;
 }
 
+.reserveer-btn {
+  padding: 1.2em 1.5em;
+  font-family: "Merriweather", serif;
+  background-color: #E04644;
+  border: none;
+  color: #191919;
+  font-weight: bold;
+}
+
+.reserveer-btn:hover {
+  background-color: #191919;
+  color: #AD8D55;
+}
+
+.photo-kamer {
+  /* The image used */
+  background-image: url("../img/lamp.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-ontbijtruimte {
+  /* The image used */
+  background-image: url("../img/kroon.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-zaal {
+  /* The image used */
+  background-image: url("../img/blauwesteen.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-check-in {
+  /* The image used */
+  background-image: url("../img/sfeer2.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-prijs {
+  /* The image used */
+  background-image: url("../img/sfeer1.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-reservation {
+  /* The image used */
+  background-image: url("../img/sfeer6.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-aboutus {
+  /* The image used */
+  background-image: url("../img/sfeer5.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container-header {
   display: block;
   flex-wrap: wrap;
@@ -38,7 +136,6 @@ html {
   z-index: 1;
   height: 30vh;
   width: 100%;
-  position: fixed;
   top: 0;
 }
 .container-header h1.shimmer {
@@ -94,42 +191,6 @@ li a {
   padding: 1em 1.5em;
 }
 
-.photo-kamer {
-  /* The image used */
-  background-image: url("../img/lamp.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.photo-ontbijtruimte {
-  /* The image used */
-  background-image: url("../img/kroon.jpg");
-  /* Set a specific height */
-  min-height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.photo-zaal {
-  /* The image used */
-  background-image: url("../img/blauwesteen.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .practical-info-container {
   display: flex;
   flex-wrap: wrap;
@@ -159,6 +220,8 @@ li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 1px solid #AD8D55;
+  border-left: 1px solid #AD8D55;
 }
 
 .box-info {
@@ -174,6 +237,7 @@ li a {
   text-align: end;
   font-family: "Great Vibes", cursive;
   letter-spacing: 0.15em;
+  padding-right: 1em;
 }
 .box-info p {
   font-size: 1em;
@@ -190,8 +254,6 @@ li a {
 .slideshow-container {
   width: 45%;
   height: auto;
-  border-top: 1px solid #AD8D55;
-  border-left: 1px solid #AD8D55;
 }
 
 .mySlides-kamer, .mySlides-ontbijtruimte, .mySlides-zaal {
@@ -201,8 +263,8 @@ li a {
   justify-content: space-evenly;
   text-align: center;
   padding: 1em;
-  margin-left: 1em;
-  margin-top: 1em;
+  margin-left: 2em;
+  margin-top: 8em;
   box-shadow: 0px 0px 10px 0px rgba(173, 141, 85, 0.5);
 }
 .mySlides-kamer img, .mySlides-ontbijtruimte img, .mySlides-zaal img {
@@ -290,16 +352,62 @@ li a {
     opacity: 1;
   }
 }
-.photo-prijs {
-  /* The image used */
-  background-image: url("../img/sfeer1.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.container-check-in {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #191919;
+}
+
+.practical-all-checkin {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 0em 0em 0em 10em;
+  padding: 2em 0em;
+}
+
+.boxen-practical-checkin {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.box-checkin-photo {
+  width: 40%;
+  border-left: 1px solid #AD8D55;
+  border-top: 1px solid #AD8D55;
+  border-bottom: 1px solid #AD8D55;
+  padding-left: 2em;
+  padding-top: 4em;
+}
+
+.sfeer-photo {
+  width: 80%;
+  padding-top: 1em;
+}
+
+.box-checkin-text {
+  width: 60%;
+  height: auto;
+}
+
+.box-checkin-text1 {
+  height: auto;
+  font-size: 1em;
+  padding: 1em;
+  background-color: #191919;
+  color: #AD8D55;
+  line-height: 1.75em;
+}
+
+.box-checkin-text1:nth-child(2) {
+  background-color: #AD8D55;
+  color: #191919;
+}
+.box-checkin-text1:nth-child(2) h2 {
+  color: #191919;
 }
 
 .prijs {
@@ -315,12 +423,10 @@ li a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 0 10em 0 10em;
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
 
 .title-prijs {
+  width: 100%;
   text-align: center;
 }
 
@@ -335,6 +441,133 @@ li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2em;
+}
+
+.title-prijs {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.5em;
+  padding-top: 2em;
+}
+
+.container-btn {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 0.5em;
+}
+
+.kamer-1-persoon, .kamer-2-personen, .extra-optie {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  border: 1px solid #191919;
+  box-shadow: 0px 0px 10px 0px rgba(25, 25, 25, 0.5);
+  padding: 0.5em;
+}
+
+th {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  padding-bottom: 1em;
+}
+
+td {
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.container-reservation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  background-color: #191919;
+}
+
+.practical-all-reservation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0em 0em 0em 10em;
+  padding: 2em 0em;
+}
+
+.container-location {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  background-color: #191919;
+}
+
+.practical-all-location {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0em 0em 0em 10em;
+  padding: 2em 0em;
+}
+
+.container-aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #191919;
+}
+
+.practical-all-aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0em 10em 0em 10em;
+  padding: 2em 0em;
+}
+.practical-all-aboutus h2 {
+  color: #AD8D55;
+  text-align: end;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 0.15em;
+}
+
+.box-text-aboutus {
+  border-left: 1px solid #AD8D55;
+  border-bottom: 1px solid #AD8D55;
+  width: 60%;
+  height: auto;
+  color: #AD8D55;
+  font-size: 1em;
+  line-height: 1.75em;
+  padding: 1em;
+}
+.box-text-aboutus p {
+  padding-bottom: 1em;
+}
+
+.box-photo-aboutus {
+  border-top: 1px solid #AD8D55;
+  border-right: 1px solid #AD8D55;
+  width: 40%;
+  height: auto;
+  padding: 1em;
+}
+.box-photo-aboutus img {
+  width: 90%;
+  margin-top: 8em;
+}
+
+.onze-troeven li {
+  color: #AD8D55;
+  padding: 0;
+  margin-top: 1em;
+  list-style-type: disc;
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
