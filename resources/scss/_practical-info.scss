@@ -12,7 +12,6 @@
   background-repeat: no-repeat;
   background-size: cover; 
 }
-
 .photo-ontbijtruimte {
   /* The image used */
   background-image: url("../img/kroon.jpg");
@@ -62,7 +61,7 @@
   padding-bottom: 2em;
 }
 //begin container met foto & slidshow & info
- .boxen-practical{
+.boxen-practical{
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;

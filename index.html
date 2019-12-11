@@ -19,10 +19,10 @@
     <div class="container-all">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Practical info</a></li>
-         
-        <li><a href="#">Reservation</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="#">Praktische info</a></li>
+        <li><a href="#">Prijs</a></li>
+        <li><a href="#">Reservatie</a></li>
+        <li><a href="#">Over ons</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -137,19 +137,19 @@
 
                   <!--begin pijlen en dotten-->
                   <div class="pijlen">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" onclick="plusSlidesK(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesK(1)">&#10095;</a>
                   </div>
                   <div style="text-align:center">
-                      <span class="dot-kamer" onclick="currentSlide(1)"></span> 
-                      <span class="dot-kamer" onclick="currentSlide(2)"></span> 
-                      <span class="dot-kamer" onclick="currentSlide(3)"></span>
-                      <span class="dot-kamer" onclick="currentSlide(4)"></span>
-                      <span class="dot-kamer" onclick="currentSlide(5)"></span>
-                      <span class="dot-kamer" onclick="currentSlide(6)"></span>
-                      <span class="dot-kamer" onclick="currentSlide(7)"></span>
-                      <span class="dot-kamer" onclick="currentSlide(8)"></span>
-                      <span class="dot-kamer" onclick="currentSlide(9)"></span>                
+                      <span class="dot-kamer" onclick="currentSlideK(1)"></span> 
+                      <span class="dot-kamer" onclick="currentSlideK(2)"></span> 
+                      <span class="dot-kamer" onclick="currentSlideK(3)"></span>
+                      <span class="dot-kamer" onclick="currentSlideK(4)"></span>
+                      <span class="dot-kamer" onclick="currentSlideK(5)"></span>
+                      <span class="dot-kamer" onclick="currentSlideK(6)"></span>
+                      <span class="dot-kamer" onclick="currentSlideK(7)"></span>
+                      <span class="dot-kamer" onclick="currentSlideK(8)"></span>
+                      <span class="dot-kamer" onclick="currentSlideK(9)"></span>                
                   </div>
             </div><!--einde "slideshow-container"-->
 
@@ -233,14 +233,14 @@
 
                     <!--begin pijlen en dotten-->
                     <div class="pijlen">
-                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      <a class="prev" onclick="plusSlidesOr(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlidesOr(1)">&#10095;</a>
                     </div>
                     <div style="text-align:center">
-                        <span class="dot-ontbijtruimte" onclick="currentSlide(1)"></span> 
-                        <span class="dot-ontbijtruimte" onclick="currentSlide(2)"></span> 
-                        <span class="dot-ontbijtruimte" onclick="currentSlide(3)"></span>
-                        <span class="dot-ontbijtruimte" onclick="currentSlide(4)"></span>               
+                        <span class="dot-ontbijtruimte" onclick="currentSlideOr(1)"></span> 
+                        <span class="dot-ontbijtruimte" onclick="currentSlideOr(2)"></span> 
+                        <span class="dot-ontbijtruimte" onclick="currentSlideOr(3)"></span>
+                        <span class="dot-ontbijtruimte" onclick="currentSlideOr(4)"></span>               
                     </div>
               </div><!--einde "slideshow-container"-->
   
@@ -281,13 +281,16 @@
         </div>
         <div class="boxen-practical">
 
-<!--foto 1-->  
+<div id="slideshow_container-cc">
+
+</div>
+          <!--foto 1-->  
           <div class="slideshow-container">
               <div class ="mySlides-zaal fade">
                   <div class="extra-container"> 
-                    <div class="numbertext">1 / 4
+                    <div class="numbertext">1 / 6
                     </div>
-                        <img src="resources/img/eetruimte5.jpg">
+                        <img src="resources/img/zaal7.jpg">
                     <div class="p">Multifunctionele zaal 
                     </div>
                   </div>
@@ -295,9 +298,9 @@
 <!--foto 2-->                 
               <div class ="mySlides-zaal fade">
                 <div class="extra-container"> 
-                    <div class="numbertext">2 / 4
+                    <div class="numbertext">2 / 6
                     </div>
-                        <img src="resources/img/eetruimte1.jpg">
+                        <img src="resources/img/zaal2.jpg">
                     <div class="p">Multifunctionele zaal
                     </div>
                 </div>
@@ -306,9 +309,9 @@
 <!--foto 3-->
                 <div class ="mySlides-zaal fade">
                   <div class="extra-container"> 
-                      <div class="numbertext">3 / 4
+                      <div class="numbertext">3 / 6
                       </div>
-                          <img src="resources/img/eetruimte3.jpg">
+                          <img src="resources/img/zaal3.jpg">
                       <div class="p">Multifunctionele zaal
                       </div>
                   </div>
@@ -317,13 +320,34 @@
 <!--foto 4-->
                 <div class ="mySlides-zaal fade">
                   <div class="extra-container"> 
-                      <div class="numbertext">4 / 4
+                      <div class="numbertext">4 / 6
                       </div>
-                          <img src="resources/img/eetruimte4.jpg">
+                          <img src="resources/img/zaal4.jpg">
                       <div class="p">Multifunctionele zaal 
                       </div>
                   </div>
               </div>
+<!--foto 5-->
+              <div class ="mySlides-zaal fade">
+                  <div class="extra-container"> 
+                      <div class="numbertext">5 / 6
+                      </div>
+                          <img src="resources/img/zaal5.jpg">
+                      <div class="p">Multifunctionele zaal 
+                      </div>
+                  </div>
+              </div>
+<!--foto 6-->
+              <div class ="mySlides-zaal fade">
+                  <div class="extra-container"> 
+                      <div class="numbertext">6 / 6
+                      </div>
+                          <img src="resources/img/zaal6.jpg">
+                      <div class="p">Multifunctionele zaal 
+                      </div>
+                  </div>
+              </div>
+
 
                 <!--begin pijlen en dotten-->
                 <div class="pijlen">
@@ -331,10 +355,12 @@
                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <div style="text-align:center">
-                    <span class="dot-zaal" onclick="currentSlide(1)"></span> 
-                    <span class="dot-zaal" onclick="currentSlide(2)"></span> 
-                    <span class="dot-zaal" onclick="currentSlide(3)"></span>
-                    <span class="dot-zaal" onclick="currentSlide(4)"></span>               
+                    <span class="dot-zaal" id="z1" onclick="currentSlide(1)"></span> 
+                    <span class="dot-zaal" id="z2" onclick="currentSlide(2)"></span> 
+                    <span class="dot-zaal" id="z3" onclick="currentSlide(3)"></span>
+                    <span class="dot-zaal" id="z4" onclick="currentSlide(4)"></span> 
+                    <span class="dot-zaal" id="z5" onclick="currentSlide(5)"></span>
+                    <span class="dot-zaal" id="z6" onclick="currentSlide(6)"></span>              
                 </div>
           </div><!--einde "slideshow-container"-->
 
@@ -370,26 +396,148 @@
         </div><!--einde "boxen-practical"-->
       </div><!--einde "practical-all"-->
     </div><!--einde "practical-info-container"-->
-</section>   
-  </main>
+</section> 
+</main>
+ <!--------------------------------------------------------------------> 
+ <section class="photo-background">
+    <div class="photo-prijs">
+    </div>
+
+ <div class="prijs">
+   <div class="container-prijs">
+     <div class="title-prijs">
+      <h1>Prijs per kamer inclusief ontbijt</h1>
+      <h4>(geldig t.e.m. 31-12-2020)</h4>
+    </div>
+    <div class="inhoud-prijs">
+     
+      <!-- <table>
+          <div class="kamer-1-persoon">1 persoonskamer
+          <tr>
+            <th>Kamer</th>
+            <th>1 nacht</th>
+            <th>2 nachten</th>
+            <th>3 nachten</th>
+            <th>4 nachten</th>
+          </tr>
+            <tr>
+              <td>€ 75</td>
+              <td>€ 145</td>
+              <td>€ 213</td>
+              <td>€ 268</td>
+            </tr>
+          </div>
+          <div class="kamer-2-personen">2 persoonskamer
+            <tr>
+              <th>Kamer</th>
+              <th>1 nacht</th>
+              <th>2 nachten</th>
+              <th>3 nachten</th>
+              <th>4 nachten</th>
+            </tr>
+            <tr>
+              <td>€ 100</td>
+              <td>€ 189</td>
+              <td>€ 270</td>
+              <td>€ 342</td>
+            </tr>
+          </div>
+      </table> -->
+      
+      </div> 
+    </div>
+  </div>
+ </section> 
+  
   <footer>
 
   </footer>
 <!--javascript-->
-  <script>
-//kamer
+     
+
+<script>
+  // let zaalinfo=[{picture: "resources/img/zaal2.jpg",description:"Multifunctionele zaal"},
+  //   {picture: "resources/img/zaal3.jpg",description:"Multifunctionele zaal"},
+  //   {picture: "resources/img/zaal4.jpg",description:"Multifunctionele zaal"},
+  //   {picture: "resources/img/zaal5.jpg",description:"Multifunctionele zaal"},
+  //   {picture: "resources/img/zaal6.jpg",description:"Multifunctionele zaal"},
+  //   {picture: "resources/img/zaal7.jpg",description:"Multifunctionele zaal"}];
+  // function Slideshow(info,container)
+  // {
+  //   this.info=info;
+  //   this.container=container;
+  //   this.imagesrc=document.createAttribute("src")
+  //   i=document.createElement("img");
+  //   i.setAttributeNode(this.imagesrc)
+  //   this.descriptionposition=document.createElement("div");
+  //   this.numberposition=document.createElement("div");
+  //   this.index=0;
+  //   let e=document.createElement("div");
+  //   cl=document.createAttribute("class");
+  //   cl.value="mySlides-zaal fade";
+  //   e.setAttributeNode(cl);
+  //   cl=document.createAttribute("class");
+  //   cl.value="slideshow-container";
+  //   this.container.setAttributeNode(cl);
+  //   c=document.createElement("div");
+  //   c.appendChild(i);
+  //   c.appendChild(this.descriptionposition);
+  //   e.appendChild(c);
+  //   container.appendChild(e);
+    
+  //   let pijlen=document.createElement("div");
+  //   cl=document.createAttribute("class");
+  //   cl.value="pijlen";
+  //   pijlen.setAttributeNode(cl);
+  //   cl=document.createAttribute("class");
+  //   oc=document.createAttribute("onclick");
+  //   oc.value=this.changeRelIndex(-1);
+
+  //   cl.value="prev";
+  //   c.appendChild(pijlen);
+  //   p=document.createElement("a");
+  //   p.setAttributeNode(cl);
+  //   p.setAttributeNode(oc);
+  //   pijlen.appendChild(p);
+  //   p.innerHTML="&#10094;"
+  //   cl=document.createAttribute("class");
+  //   cl.value="next";
+  //   p=document.createElement("a")
+  //   p.setAttributeNode(cl);
+  //   p.innerHTML="&#10095;";
+  //   pijlen.appendChild(p);
+  //   changeIndex(0)
+  //   function changeIndex(i)
+  //   {
+  //     this.index=i;
+  //     this.imagesrc.value=info[this.index].picture;
+  //   }
+  //   function changeRelIndex(i)
+  //   {
+  //     a=this.index+i;
+  //     if(a<0) a=0;
+  //     if(a>this.info.length) a=this.info.length;
+  //     changeIndex(a);
+      
+  //   }
+
+    
+  // }
+  // a=Slideshow(zaalinfo,document.getElementById("slideshow_container-cc"))
+
+//kamer 
       var slideIndex = 1;
-      showSlides(slideIndex);
+      showSlidesK(slideIndex);
       
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
+      function plusSlidesK(n) {
+        showSlidesK(slideIndex += n);
       }
       
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
+      function currentSlideK(n) {
+        showSlidesK(slideIndex = n);
       }
       
-      function showSlides(n) {
+      function showSlidesK(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides-kamer");
         var dots = document.getElementsByClassName("dot-kamer");
@@ -408,6 +556,34 @@
 
 //ONTBIJTRUIMTE
       var slideIndex = 1;
+      showSlidesOr(slideIndex);
+
+      function plusSlidesOr(n) {
+        showSlidesOr(slideIndex += n);
+      }
+      
+      function currentSlideOr(n) {
+        showSlidesOr(slideIndex = n);
+      }
+      
+      function showSlidesOr(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides-ontbijtruimte");
+        var dots = document.getElementsByClassName("dot-ontbijtruimte");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
+//ZAAL
+      var slideIndex = 1;
       showSlides(slideIndex);
 
       function plusSlides(n) {
@@ -420,8 +596,8 @@
       
       function showSlides(n) {
         var i;
-        var slides = document.getElementsByClassName("mySlides-ontbijtruimte");
-        var dots = document.getElementsByClassName("dot-ontbijtruimte");
+        var slides = document.getElementsByClassName("mySlides-zaal");
+        var dots = document.getElementsByClassName("dot-zaal");
         if (n > slides.length) {slideIndex = 1}    
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {

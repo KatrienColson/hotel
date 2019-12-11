@@ -290,5 +290,51 @@ li a {
     opacity: 1;
   }
 }
+.photo-prijs {
+  /* The image used */
+  background-image: url("../img/sfeer1.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prijs {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #AD8D55;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.container-prijs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 10em 0 10em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.title-prijs {
+  text-align: center;
+}
+
+.title-prijs h1 {
+  color: #191919;
+  font-family: "Great Vibes", cursive;
+  font-size: 2em;
+}
+
+.inhoud-prijs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=main.css.map */
