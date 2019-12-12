@@ -4,17 +4,16 @@
   flex-wrap: wrap;
   background-color: $bckgrnd-color;
   justify-content: flex-end;
-  
   ul{
     display: flex;
     flex-wrap: wrap;
     font-size: 1rem;
   }
 }
-// .container-all{
+//.container-all{
 //   margin: 0 7em 0 7em;
-//   padding: 0.5em;
-// }
+  //padding-bottom: 2em;
+ //}
 li{
   list-style-type: none;
   flex-direction: row;

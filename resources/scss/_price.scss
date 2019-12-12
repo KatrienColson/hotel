@@ -51,17 +51,20 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 70%;
   border: 1px solid $border-dark;
   box-shadow: $box-shadow-dark;
   padding: 0.5em;
+  background-color: $bckgrnd-color;
 }
 th{
   text-align: center;
-  font-family: $text-nav;
   padding-bottom: 1em;
+  color: $text-light;
+  font-size: 1em;
 }
 td{
   text-align: center;
-  font-family: $text-nav;
+  color: $text-light;
+  font-size: 1em;
 }

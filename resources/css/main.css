@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Mansalva|Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant|Great+Vibes|Homemade+Apple|La+Belle+Aurore|Meddon|Niconne|Parisienne|Satisfy&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@ html {
 
 .reserveer-btn {
   padding: 1.2em 1.5em;
-  font-family: "Merriweather", serif;
+  font-family: "Cormorant", serif;
   background-color: #E04644;
   border: none;
   color: #191919;
@@ -45,7 +46,7 @@ html {
   /* The image used */
   background-image: url("../img/lamp.jpg");
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 620px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -125,8 +126,20 @@ html {
   background-size: cover;
 }
 
+.photo-contact {
+  /* The image used */
+  background-image: url("../img/sfeer7.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container-header {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -134,8 +147,9 @@ html {
   text-align: center;
   background-color: #191919;
   z-index: 1;
-  height: 30vh;
+  height: 33vh;
   width: 100%;
+  position: fixed;
   top: 0;
 }
 .container-header h1.shimmer {
@@ -207,8 +221,7 @@ li a {
 
 .title-practical {
   flex-direction: column;
-  font-size: 2em;
-  font-family: "Merriweather", serif;
+  font-family: "Cormorant", serif;
   color: #AD8D55;
   text-align: center;
   padding-top: 2em;
@@ -275,13 +288,13 @@ li a {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
-  font-family: "Merriweather", serif;
+  font-family: "Cormorant", serif;
   color: #AD8D55;
   font-size: 1em;
 }
 
 .numbertext {
-  font-family: "Merriweather", serif;
+  font-family: "Cormorant", serif;
   color: #AD8D55;
   padding-bottom: 1em;
 }
@@ -377,10 +390,9 @@ li a {
 .box-checkin-photo {
   width: 40%;
   border-left: 1px solid #AD8D55;
-  border-top: 1px solid #AD8D55;
-  border-bottom: 1px solid #AD8D55;
   padding-left: 2em;
-  padding-top: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .sfeer-photo {
@@ -397,17 +409,21 @@ li a {
   height: auto;
   font-size: 1em;
   padding: 1em;
-  background-color: #191919;
-  color: #AD8D55;
   line-height: 1.75em;
+  background-color: #AD8D55;
+  color: #191919;
+  padding-bottom: 2em;
+}
+.box-checkin-text1 h2 {
+  color: #191919;
 }
 
 .box-checkin-text1:nth-child(2) {
-  background-color: #AD8D55;
-  color: #191919;
+  background-color: #191919;
+  color: #AD8D55;
 }
 .box-checkin-text1:nth-child(2) h2 {
-  color: #191919;
+  color: #AD8D55;
 }
 
 .prijs {
@@ -465,21 +481,24 @@ li a {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 70%;
   border: 1px solid #191919;
   box-shadow: 0px 0px 10px 0px rgba(25, 25, 25, 0.5);
   padding: 0.5em;
+  background-color: #191919;
 }
 
 th {
   text-align: center;
-  font-family: "Merriweather", serif;
   padding-bottom: 1em;
+  color: #AD8D55;
+  font-size: 1em;
 }
 
 td {
   text-align: center;
-  font-family: "Merriweather", serif;
+  color: #AD8D55;
+  font-size: 1em;
 }
 
 .container-reservation {
@@ -501,8 +520,7 @@ td {
 .container-location {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #191919;
 }
 
@@ -510,8 +528,67 @@ td {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0em 0em 0em 10em;
+  margin: 0em 10em 0em 10em;
   padding: 2em 0em;
+  justify-content: center;
+}
+
+.title-location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.title-location h2 {
+  color: #AD8D55;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 0.15em;
+}
+
+.box-location-left {
+  width: 50%;
+  height: auto;
+  padding-left: 2em;
+  padding-top: 2em;
+  border-top: 1px solid #AD8D55;
+  border-left: 1px solid #AD8D55;
+}
+.box-location-left h3 {
+  color: #AD8D55;
+}
+.box-location-left p {
+  color: #AD8D55;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.box-location-right {
+  border-bottom: 1px solid #AD8D55;
+  border-right: 1px solid #AD8D55;
+  width: 50%;
+  height: auto;
+}
+.box-location-right .box-location-right-top, .box-location-right .box-location-right-bottom {
+  height: auto;
+}
+.box-location-right .box-location-right-middle {
+  padding: 2em;
+  margin-top: 2em;
+}
+.box-location-right .box-location-right-middle h3 {
+  color: #AD8D55;
+}
+.box-location-right .box-location-right-middle p {
+  color: #AD8D55;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+.box-location-right-top img, .box-location-right-bottom img {
+  height: auto;
+  width: 400px;
+  padding-left: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .container-aboutus {
@@ -568,6 +645,238 @@ td {
   margin-top: 1em;
   list-style-type: disc;
   margin-left: 1em;
+}
+
+.container-history {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #AD8D55;
+}
+
+.practical-all-history {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0em 10em 0em 10em;
+  padding: 2em 0em;
+  justify-content: center;
+}
+
+.title-history h1 {
+  color: #191919;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 0.15em;
+  padding-bottom: 1em;
+}
+
+.info-history {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.info-history p {
+  padding: 1em;
+  line-height: 1.75em;
+}
+
+.box-info-deel1 {
+  width: 50%;
+  border-top: 1px solid #191919;
+  border-left: 1px solid #191919;
+}
+
+.box-info-deel2 {
+  width: 50%;
+  border-bottom: 1px solid #191919;
+  border-right: 1px solid #191919;
+}
+
+.slideshow-container-history {
+  width: 100%;
+  height: auto;
+  background-color: #191919;
+  margin-top: 2em;
+  padding-bottom: 1em;
+}
+
+.mySlides-history {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+.mySlides-history img {
+  height: 250px;
+  box-shadow: 0px 0px 10px 0px rgba(173, 141, 85, 0.5);
+}
+.mySlides-history .p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #AD8D55;
+  font-size: 1em;
+  padding-top: 1em;
+}
+
+.numbertext {
+  color: #AD8D55;
+  padding-bottom: 1em;
+}
+
+.pijlen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  /*position: absolute;*/
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #AD8D55;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* The dots/bullets/indicators */
+.dot-history {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 1px;
+  background-color: #AD8D55;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container-contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #191919;
+  padding: 2em 0;
+}
+
+.practical-all-contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0em 10em 0em 10em;
+  padding: 2em 0em;
+  border-left: 1px solid #AD8D55;
+}
+
+.box-contact-1 {
+  width: 50%;
+  height: auto;
+}
+.box-contact-1 h2 {
+  color: #AD8D55;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 0.15em;
+  text-align: right;
+  padding-right: 1em;
+}
+.box-contact-1 p {
+  color: #AD8D55;
+  line-height: 2em;
+  text-align: center;
+}
+
+.box-contact-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  height: auto;
+}
+
+.img1 .fietsroute {
+  width: 150px;
+  height: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.img1 .plattelandstoerisme {
+  width: 150px;
+  height: auto;
+  padding-bottom: 0.5em;
+}
+
+.img2 .vlaanderenvakantieland {
+  width: 150px;
+  height: auto;
+  padding-bottom: 0.5em;
+}
+.img2 .limburg {
+  width: 150px;
+  height: auto;
+  padding-bottom: 6em;
+}
+
+.container-footer {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #191919;
+  height: 5vh;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.copieright {
+  color: #AD8D55;
+  font-size: 0.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
   background-image: url("../img/lamp.jpg");
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 620px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -80,6 +80,19 @@
 .photo-aboutus {
   /* The image used */
   background-image: url("../img/sfeer5.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.photo-contact {
+  /* The image used */
+  background-image: url("../img/sfeer7.jpg");
 
   /* Set a specific height */
   min-height: 500px; 
