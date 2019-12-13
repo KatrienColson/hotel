@@ -2,15 +2,97 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: $bckgrnd-color;
+  color: $text-light;
 }
 .practical-all-reservation{
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0em 0em 0em 10em;
+  flex-direction: row;
+  margin: 0em 10em 0em 10em;
   padding: 2em 0em;
-  //justify-content: center;
+}
+.title-reservation{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  color: $text-light;
+  h2{
+    text-align: center;
+    font-family: $text-head;
+  }
+  p{
+    text-align: center;
+  }
+}
+.extra-btn-prijs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn-prijs{
+  margin: 2em 0;
+  background-color: $btn-bckgr-dark-to-light;
+  color: $text-dark;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  border: none;
+}
+  .btn-prijs :hover{
+    background-color: $btn-bckgr-light-to-dark;
+    color: $text-light;
+  }
+.invulformulier{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+}
+label{
+  color: $text-light;
+  padding: 20px 0px 5px 0px;
+}
+input{
+  padding: 8px;
+  font-size: 1em;
+  width: 93%;
+}
+.box-invulformulier-left, .box-invulformulier-right{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
+}
+.box-invulformulier-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  h2{
+    text-align: center;
+  }
+}
+.textaria-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  border: 1px solid white;
+}
+textarea{
+  //margin: 0px 200px;
+}
+.submit-btn{
+  background-color: $btn-bckgr-dark-to-light;
+  color: $text-dark;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  border: none;
+
 }
 

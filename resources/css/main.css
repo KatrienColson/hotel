@@ -220,7 +220,7 @@ li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #d3bfa4;
+  background-color: #cdba99;
   min-width: 160px;
   z-index: 1;
 }
@@ -544,16 +544,106 @@ td {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #191919;
+  color: #AD8D55;
 }
 
 .practical-all-reservation {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0em 0em 0em 10em;
+  flex-direction: row;
+  margin: 0em 10em 0em 10em;
   padding: 2em 0em;
+}
+
+.title-reservation {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  color: #AD8D55;
+}
+.title-reservation h2 {
+  text-align: center;
+  font-family: "Cormorant", serif;
+}
+.title-reservation p {
+  text-align: center;
+}
+
+.extra-btn-prijs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-prijs {
+  margin: 2em 0;
+  background-color: #AD8D55;
+  color: #191919;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  border: none;
+}
+
+.btn-prijs :hover {
+  background-color: #191919;
+  color: #AD8D55;
+}
+
+.invulformulier {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  color: #AD8D55;
+  padding: 20px 0px 5px 0px;
+}
+
+input {
+  padding: 8px;
+  font-size: 1em;
+  width: 93%;
+}
+
+.box-invulformulier-left, .box-invulformulier-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.box-invulformulier-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+}
+.box-invulformulier-bottom h2 {
+  text-align: center;
+}
+
+.textaria-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.submit-btn {
+  background-color: #AD8D55;
+  color: #191919;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  border: none;
 }
 
 .container-aboutus {
