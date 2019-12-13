@@ -17,12 +17,18 @@
 .title-prijs{
   width: 100%;
   text-align: center;
+  h2{
+    color: $text-dark;
+    font-family: $text-head;
+    padding: 0;
+    font-size: 32px;
+ 
+  }
+  h5{
+
+  }
 }
-.title-prijs h1{
-  color: $text-dark;
-  font-family: $text-head;
-  font-size: 2em;
-}
+
 //table prijs
 .inhoud-prijs{
   display: flex;

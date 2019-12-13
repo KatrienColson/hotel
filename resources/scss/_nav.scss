@@ -28,3 +28,42 @@ li{
     padding: 1em 1.5em;
   }
 }
+.dropbtn {
+  background-color: $bckgrnd-color;
+  color: $text-light;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d3bfa4;
+  min-width: 160px;
+  //box-shadow: 0px 8px 16px 0px rgba(25, 25, 25, 0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: $text-dark;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: $btn-bckgr-dark-to-light;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown:hover .dropbtn{
+  background-color: $bckgrnd-color;
+}

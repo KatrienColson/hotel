@@ -40,14 +40,15 @@
 }
 .box-checkin-text1{
   height: auto;
-  font-size: 1em;
+  //font-size: 1em;
   padding: 1em;
   line-height: 1.75em;
   background-color: $backgrnd-color-light;
   color: $text-dark;
   padding-bottom: 2em;
   h2{
-    color: $text-dark
+    color: $text-dark;
+    font-family: $text-head;
   }
 }
 .box-checkin-text1:nth-child(2){
@@ -55,6 +56,9 @@
   color: $text-light;
   h2{
     color: $text-light;
+    font-family: $text-head;
+
+ 
   }
 }
 
