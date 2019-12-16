@@ -13,7 +13,7 @@
 <body>
 <!--HEADER EN NAV-->
   <header>
-    <div class="container-header"id="home-link">
+    <div class="container-header">
       <h2>Welkom bij</h2>
       <h1 class="shimmer">Hotel Oude Eycke ***</h1>
 
@@ -51,6 +51,7 @@
               <div class="dropdown-content">
                 <a href="#about-us-link">Het hotel</a>
                 <a href="#history-link">Geschiedenis</a>
+                <a href="#photoalbum-link">Foto's</a>
               </div>
           </div>
 
@@ -69,7 +70,7 @@
 </header>
 <!--------------------------------------------------------------------> 
 
-<main>
+<main id="home-link">
     <section class="photo-background">
       <!--background foto--> 
       <div class="photo-kamer">
@@ -880,9 +881,9 @@
                 </div>
             </div>
               <!--begin pijlen en dotten-->
-              <div class="pijlen">
-                <a class="prev" onclick="plusSlidesHi(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlidesHi(1)">&#10095;</a>
+              <div class="pijlen1">
+                <a class="prev1" onclick="plusSlidesHi(-1)">&#10094;</a>
+                <a class="next1" onclick="plusSlidesHi(1)">&#10095;</a>
               </div>
               <div style="text-align:center">
                   <span class="dot-history" onclick="currentSlideHi(1)"></span> 
@@ -896,6 +897,52 @@
     </div>
   </section>
 <!--------------------------------------------------------------------> 
+<!--Photo's-->
+<section class="container-album">
+    <div class= "practical-all-bottom-photo" id="photoalbum-link">
+          <div class="container-album-title">
+            <h2>Sfeerbeelden in en rond het hotel</h2>
+          </div>
+      <div class="cards-wrapper">
+  
+          <ul class="cards__container">
+              <!--box 1-->
+              <li class="box"><img src="resources/img/algemeen/avond4.jpg"></li>
+              <!--box 2-->
+              <li class="box"><img src="resources/img/algemeen/koer1.jpg"></li>
+              <li class="box"><img src="resources/img/algemeen/parking1.jpg"></li>
+              <li class="box"><img src="resources/img/algemeen/steen1.jpg"></li>
+              <li class="box"><img src="resources/img/algemeen/winter1.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/avond2.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/koer2.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/parking2.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/koer3.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/winter2.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/avond1.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/koer4.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/winter3.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/avond3.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/koer5.jpg"></li>
+              <li class="box box--hide"><img src="resources/img/algemeen/koer6.jpg"></li>
+            </ul>
+  
+          <div class="card__text-content">
+              <div class="card__summary">
+               Enkele foto's in en rond het hotel om zo de sfeer al een beetje te kunnen opsnuiven.
+              </div>
+          </div>
+      </div>
+      <div class="button-all">
+      <div class="button" onclick="shiftLeft()"><p>&#10094;</p></div>
+      <div class="button" onclick="shiftRight()"><p>&#10095;</p></div>
+      </div>
+    </div>
+  </section>
+<!--------------------------------------------------------------------> 
+
+
+
+
 
 <!--CONTACT-->  
   <section class="container-contact-foto">
@@ -994,6 +1041,10 @@
     </div>
   </section>
 <!--------------------------------------------------------------------> 
+
+
+
+
 
 <!--FOOTER-->
   <footer class="container-footer">
@@ -1183,11 +1234,96 @@
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
       }
+//TEST
 
+function shiftLeft() {
 
-  </script>   
+	const boxes = document.querySelectorAll(".box");
 
+	const tmpNode = boxes[0];
 
+	boxes[0].className = "box move-out-from-left";
 
+	 
+
+	setTimeout(function() {
+
+	    if (boxes.length > 5) {
+
+	        tmpNode.classList.add("box--hide");
+
+	        boxes[5].className = "box move-to-position5-from-left";
+
+	    }
+
+	    boxes[1].className = "box move-to-position1-from-left";
+
+	    boxes[2].className = "box move-to-position2-from-left";
+
+	    boxes[3].className = "box move-to-position3-from-left";
+
+	    boxes[4].className = "box move-to-position4-from-left";
+
+	    boxes[0].remove();
+
+	 
+
+	    document.querySelector(".cards__container").appendChild(tmpNode);
+
+	 
+
+	}, 500);
+
+	 
+
+	}
+
+	 
+
+	function shiftRight() {
+
+	const boxes = document.querySelectorAll(".box");
+
+	boxes[4].className = "box move-out-from-right";
+
+	setTimeout(function() {
+
+	    const noOfCards = boxes.length;
+
+	    if (noOfCards > 4) {
+
+	        boxes[4].className = "box box--hide";
+
+	    }
+
+	 
+
+	    const tmpNode = boxes[noOfCards - 1];
+
+	    tmpNode.classList.remove("box--hide");
+
+	    boxes[noOfCards - 1].remove();
+
+	    let parentObj = document.querySelector(".cards__container");
+
+	    parentObj.insertBefore(tmpNode, parentObj.firstChild);
+
+	    tmpNode.className = "box move-to-position1-from-right";
+
+	    boxes[0].className = "box move-to-position2-from-right";
+
+	    boxes[1].className = "box move-to-position3-from-right";
+
+	    boxes[2].className = "box move-to-position4-from-right";
+
+	    boxes[3].className = "box move-to-position5-from-right";
+
+	}, 500);
+
+	 
+
+	}
+
+  </script>
 </body>
 </html>
