@@ -14,7 +14,6 @@
 }
 .title-practical{
   flex-direction: column;
-  //font-size: 2em;
   font-family: $text-nav;
   color:$text-light;
   text-align: center;
@@ -74,7 +73,6 @@
   box-shadow: $box-shadow-light;
 
   img{
-    //width: 100%;
     height: 250px;
   }
    .p{
@@ -105,7 +103,6 @@
   display: flex;
   text-align: center;
   cursor: pointer;
-  //position: absolute;
   top: 100%;
   width: auto;
   padding: 16px;
@@ -117,7 +114,6 @@
   border-radius: 0 3px 3px 0;
   user-select: none; 
 }
-
 /* The dots/bullets/indicators */
 .dot-kamer, .dot-ontbijtruimte, .dot-zaal {
 cursor: pointer;
@@ -129,11 +125,9 @@ border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
 background-color: #fff;
 }
-
 /* Fading animation */
 .fade {
 -webkit-animation-name: fade;

@@ -515,6 +515,7 @@ td {
 .box-checkin-text {
   width: 60%;
   height: auto;
+  margin-top: 2em;
 }
 
 .box-checkin-text1 {
@@ -537,6 +538,18 @@ td {
 .box-checkin-text1:nth-child(2) h2 {
   color: #AD8D55;
   font-family: "Cormorant", serif;
+}
+
+.box-checkin-extra {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #AD8D55;
+  padding-top: 5em;
+  padding-left: 1em;
+}
+.box-checkin-extra .container-btn {
+  margin-top: 2em;
 }
 
 .container-reservation {
@@ -750,14 +763,15 @@ input {
 
 .extra-container {
   background-color: #191919;
-  width: 50%;
   padding: 2em 0;
-  justify-content: center;
 }
 
 .slideshow-container-history {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
+  flex-direction: column;
   background-color: #AD8D55;
   margin-top: 2em;
   padding-bottom: 1em;
@@ -767,6 +781,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
@@ -792,11 +807,16 @@ input {
   color: #AD8D55;
 }
 
+.pijlen-dots-all {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .pijlen1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 1em;
   padding-top: 1em;
 }
 
@@ -805,7 +825,6 @@ input {
   display: flex;
   text-align: center;
   cursor: pointer;
-  /*position: absolute;*/
   top: 100%;
   width: auto;
   padding: 16px;
@@ -819,6 +838,13 @@ input {
 }
 
 /* The dots/bullets/indicators */
+.dotsall {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .dot-history {
   cursor: pointer;
   height: 12px;
@@ -867,11 +893,13 @@ input {
 .practical-all-bottom-photo {
   margin: 0 7px 0 7px;
   width: 100%;
+  background-color: black;
+  z-index: 10;
+  padding: 2em 0;
 }
 
 .container-album-title {
   text-align: center;
-  padding-top: 2em;
 }
 
 .button-all {
@@ -910,7 +938,6 @@ input {
 }
 
 .box {
-  /*     margin: -1.5rem; */
   width: 20rem;
   height: 20rem;
   box-shadow: 0px 0px 2rem 0px rgba(173, 141, 85, 0.5);
@@ -921,7 +948,6 @@ input {
   position: relative;
 }
 
-/* transition: 1s all; */
 img {
   width: 20rem;
   height: 20rem;

@@ -32,7 +32,6 @@
     line-height: 1.75em;
   }
 }
-
 .box-info-deel1{
   width: 50%;
   border-top: 1px solid $border-dark;
@@ -43,15 +42,16 @@
   border-bottom: 1px solid $border-dark;
   border-right: 1px solid $border-dark;
 }
-.extra-container{
-  background-color: $bckgrnd-color;
-  width:50%;
-  padding: 2em 0;
-  justify-content: center;
-}
+ .extra-container{
+   background-color: $bckgrnd-color;
+   padding: 2em 0;
+ }
 .slideshow-container-history{
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
+  flex-direction: column;
   background-color: $backgrnd-color-light;
   margin-top: 2em;
   padding-bottom: 1em;
@@ -60,7 +60,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  //flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   text-align: center; 
 
@@ -75,7 +75,6 @@
     color: $text-light;
     font-size: 1em;
     padding-top: 1em;
-   
   }
 }
 .numbertext{
@@ -85,11 +84,15 @@
 .numbertext-history{
   color:$text-light;
 }
+.pijlen-dots-all{
+  display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
 .pijlen1{
  display: flex;
  flex-direction: row;
  justify-content: center;
- padding-bottom: 1em;
  padding-top: 1em;
 }
 /* Next & previous buttons */
@@ -97,7 +100,6 @@
  display: flex;
  text-align: center;
  cursor: pointer;
- /*position: absolute;*/
  top: 100%;
  width: auto;
  padding: 16px;
@@ -109,8 +111,13 @@
  border-radius: 0 3px 3px 0;
  user-select: none; 
 }
-
 /* The dots/bullets/indicators */
+.dotsall{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .dot-history{
 cursor: pointer;
 height: 12px;
@@ -121,11 +128,9 @@ border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
 background-color: #fff;
 }
-
 /* Fading animation */
 .fade {
 -webkit-animation-name: fade;
@@ -137,7 +142,6 @@ animation-duration: 1.5s;
  from {opacity: .4} 
  to {opacity: 1}
 }
-
 @keyframes fade {
  from {opacity: .4} 
  to {opacity: 1}
