@@ -1,0 +1,162 @@
+<!--RESERVATION-->
+<section class="container-reservation-foto">
+  <!--background foto--> 
+  <div class="photo-reservation">
+  </div>
+    <div class="container-reservation" id="reservation-link">
+      <div class= "practical-all-reservation">
+        <div class="title-reservation">
+         <h2>Hebt u vragen of wenst u een offerte,</h2>
+         <p>gelieve onderstaande velden in te vullen (*verplicht).</p> 
+         <p>Let op! Een boeking is enkel geldig na uw bevestiging van onze offerte.</p>
+          <div class="extra-btn-prijs">
+            <a href="#price-link" class="btn-prijs">Prijslijst</a>
+          </div>
+        </div>  
+        <div class="invulformulier">
+          <div class="box-invulformulier-left">
+              <tr>
+                  <td><h2>Persoonlijke gegevens</h2></td>
+                </tr>
+              <tr>
+                <td><label>Name *</label></td>
+                <td><input type="text" size="50" name="name" id="name" placeholder="Last + Firstname" required></td>
+              </tr>
+              <tr>
+                <td><label>Bedrijf</label></td>
+                <td><input type="text" size="50" name="bedrijf" id="bedrijf"></td>
+              </tr>
+              <tr>
+                <td><label>BTW-nummer</label></td>
+                <td><input type="text" size="30" name="btwnummer" id="btwnummer"></td>
+              </tr>
+              <tr>
+                <td><label>Straat + huisnummer</label></td>
+                <td><input type="text" size="50" name="adres" id="adres"></td>
+              </tr>
+              <tr>
+                <td><label>Postcode *</label></td>
+                <td><input type="text" size="8" name="postcode" id="postcode" required></td>
+              </tr>
+              <tr>
+                <td><label>Gemeente *</label></td>
+                <td><input type="text" size="50" name="gemeente" id="gemeente" required></td>
+              </tr>
+              <tr>
+                <td><label>Land *</label></td>
+                <td><input type="text" size="30" name="land" id="land" required></td>
+              </tr>
+              <tr>
+                <td><label>Telefoon *</label></td>
+                <td><input type="text" size="30" name="telefoon" id="telefoon" required></td>
+              </tr>
+              <tr>
+                <td><label>GSM</label></td>
+                <td><input type="text" size="30" name="gsm" id="gsm"></td>
+              </tr>
+              <tr>
+                <td><label>E-mail *</label></td>
+                <td><input type="email" size="50" name="email" id="email" required></td>
+              </tr>
+          </div>
+
+          <div class="box-invulformulier-right">
+              <tr>
+                <td><h2>Kamergegevens</h2></td>
+              </tr>
+              <tr>
+                <td><label>Aankomst *</label></td>
+                <td><input type="text" value="" readonly="" name="aankomst" id="aankomst" required>
+                  &nbsp;
+                  <input name="trigger_a" id="trigger_a" type="reset" value=">" class="ondertitel" style="width:20px">
+                    <!--<script type="text/javascript">
+                    Calendar.setup({
+                      inputField     :    "aankomst",     // id of the input field
+                      ifFormat       :    "%Y-%m-%d",      // format of the input field
+                      button         :    "trigger_a",  // trigger for the calendar (button ID)
+                      align          :    "Bl",           // alignment (defaults to "Bl")
+                      singleClick    :    true
+                    });
+                  </script>	-->
+                </td>
+              </tr>
+              <tr>
+                <td><label>Vertrek *</label></td>
+                <td><input type="text" value="" readonly="" name="vertrek" id="vertrek" required>&nbsp;<input name="trigger_b" id="trigger_b" type="reset" value=">" class="ondertitel" style="width:20px">
+                    <!--<script type="text/javascript">
+                    Calendar.setup({
+                      inputField     :    "vertrek",     // id of the input field
+                      ifFormat       :    "%Y-%m-%d",      // format of the input field
+                      button         :    "trigger_b",  // trigger for the calendar (button ID)
+                      align          :    "Bl",           // alignment (defaults to "Bl")
+                      singleClick    :    true
+                    });
+                  </script>	-->
+                </td>
+              </tr>
+              <tr>
+                <td><label>Aantal</label></td>
+                <td><input name="single" id="single" value="" size="8" placeholder="0"> 
+                <p>x 1-persoons-kamer(s)</p>   
+              </tr>
+              <br>
+              <tr>
+                <td><a href="accomodaties-kamer.php"></a></td>
+                <td><input name="double" id="double" value="" size="8" placeholder="0">
+                <p>x 2-persoons-kamer(s)</p></td>
+              </tr>
+              <tr>
+                  <td><label>Extra bed van 13 jaar tot 18 jaar </label></td>
+                  <td><input size="8" type="checkbox" name="extrabed" id="extrabed" value="ja" placeholder="0"></td>
+                </tr>
+              <tr>
+                <td><label>Aantal *</label></td>
+                <td><input name="volwassenen" id="volwassenen" value="" size="8" placeholder="0" required> 
+                <p>volwassenen</p></td>
+              </tr>
+              <tr>
+                <td><label>Aantal *</label></td>
+                <td><input name="kinderen" id="kinderen" value="" size="8" placeholder="0" required>
+                  <p>kinderen (&lt; 13 jaar)</p></td>
+              </tr>
+              <tr>
+                <td><label>Babybedje</label></td>
+                <td><input size="8" type="checkbox" name="babybed" id="babybed" value="ja"></td>
+              </tr>
+              <tr>
+                <td><label>Extra bed op de kamer &lt; 13 jaar</label></td>
+                <td valign="top"><input size="8" type="checkbox" name="extrabed" id="extrabed" value="ja"></td>
+              </tr>
+
+          </div>
+        </div>
+        <div class="box-invulformulier-bottom">
+          <div class="textaria-bottom">
+            <tr>
+                <td><h2>Vragen / Opmerkingen</h2></td>
+              </tr>
+              <tr>
+                <td><textarea name="opmerking" cols="50" rows="8" id="opmerking"></textarea></td>
+              </tr>
+              <br>
+              <tr>
+                <td><input name="nieuwsbrief" type="checkbox" id="nieuwsbrief" value="ja" size="8" checked="checked">
+                <p>Ja, ik wil op de hoogte blijven van alle nieuws en/of aanbiedingen
+                van Hotel “Oude Eycke”</p>
+                </td>
+              </tr>
+              <br>
+              <!--<tr class="captcha">
+                <td colspan="2" valign="top"><a href="http://nl.wikipedia.org/wiki/Captcha" target="_blank"></a>
+                <input name="captcha" id="captcha" size="8" maxlength="4">
+                </td>
+              </tr>-->
+            
+              <tr>
+                <td><input class="submit-btn" type="submit" name="Submit" value=" Vraag of offerte " onclick="checkFrm();"></td>
+              </tr>
+        </div>
+      </div>
+      </div>
+    </div> 
+</section>

@@ -6,6 +6,8 @@
   <link rel="icon" type="image/png" href="resources/img/logo.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="resources/css/main.css">
   <title>Hotel Oude Eycke</title>
 </head>
@@ -589,151 +591,190 @@
           <div class="extra-btn-prijs">
             <a href="#price-link" class="btn-prijs">Prijslijst</a>
           </div>
-        </div>  
-        <div class="invulformulier">
-          <div class="box-invulformulier-left">
+        </div> 
+<!--PERSOONLIJKE GEGEVENS-->
+    <form>
+          <div class="invulformulier">
+            <div class="box-invulformulier-left">
               <tr>
                   <td><h2>Persoonlijke gegevens</h2></td>
                 </tr>
-              <tr>
-                <td><label>Name *</label></td>
-                <td><input type="text" size="50" name="name" id="name" placeholder="Last + Firstname" required></td>
-              </tr>
-              <tr>
-                <td><label>Bedrijf</label></td>
-                <td><input type="text" size="50" name="bedrijf" id="bedrijf"></td>
-              </tr>
-              <tr>
-                <td><label>BTW-nummer</label></td>
-                <td><input type="text" size="30" name="btwnummer" id="btwnummer"></td>
-              </tr>
-              <tr>
-                <td><label>Straat + huisnummer</label></td>
-                <td><input type="text" size="50" name="adres" id="adres"></td>
-              </tr>
-              <tr>
-                <td><label>Postcode *</label></td>
-                <td><input type="text" size="8" name="postcode" id="postcode" required></td>
-              </tr>
-              <tr>
-                <td><label>Gemeente *</label></td>
-                <td><input type="text" size="50" name="gemeente" id="gemeente" required></td>
-              </tr>
-              <tr>
-                <td><label>Land *</label></td>
-                <td><input type="text" size="30" name="land" id="land" required></td>
-              </tr>
-              <tr>
-                <td><label>Telefoon *</label></td>
-                <td><input type="text" size="30" name="telefoon" id="telefoon" required></td>
-              </tr>
-              <tr>
-                <td><label>GSM</label></td>
-                <td><input type="text" size="30" name="gsm" id="gsm"></td>
-              </tr>
-              <tr>
-                <td><label>E-mail *</label></td>
-                <td><input type="email" size="50" name="email" id="email" required></td>
-              </tr>
-          </div>
 
-          <div class="box-invulformulier-right">
+              
+<!--Voornaam-->               
+                <div class="form-group row">
+                  <label for="colFormLabelMd" class="col-md-auto col-form-label col-form-label-md">Voornaam</label>
+                    
+                    <input type="text" class="form-control form-control-md" id="colFormLabelMd" placeholder="Vul hier je voornaam in">
+                    
+                </div>
+<!--Achternaam *--> 
+                <div class="form-group row">
+                  <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Achternaam *</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Vul hier je achternaam in" required="">
+                    </div>
+                </div>
+<!--Bedrijf--> 
+                <div class="form-group row">
+                  <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Bedrijf</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Bedrijfsnaam">
+                    </div>
+                </div>
+<!--BTW-nr--> 
+                <div class="form-group row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">BTW nummer</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="BTW-nummer">
+                  </div>
+                </div>
+<!--Straat * + huisnummer *-->
+                <div class="form-group row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Straat * & Huisnummer *</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Straat + nr" required>
+                  </div>
+                </div>
+<!--Postcode *-->
+                <div class="form-group row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Postcode *</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Postcode" required>
+                  </div>
+                </div>
+<!--Gemeente *-->
+                <div class="form-group row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Gemeente *</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Gemeente" required>
+                  </div>
+                </div>
+<!--Land *-->
+                <div class="form-group row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Land *</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Land" required>
+                  </div>
+                </div>
+<!--Telefoonnummer/Mobiel *-->
+                <div class="form-group row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Telefoonnummer * / Mobiel *</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="tel/GSM" required>
+                  </div>
+                </div>
+<!--Email *-->
+                <div class="form-group row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Email *</label>
+                    <input type="email" class="form-control" id="validationDefault01" placeholder="Email" required>
+                  </div>
+                </div>                         
+            </div><!--EINDE persoonlijke gegevens(invulformulier left-->
+
+
+<!--KAMERGEGEVENS-->
+            <div class="box-invulformulier-right">
               <tr>
                 <td><h2>Kamergegevens</h2></td>
               </tr>
-              <tr>
-                <td><label>Aankomst *</label></td>
-                <td><input type="text" value="" readonly="" name="aankomst" id="aankomst" required>
-                  &nbsp;
-                  <input name="trigger_a" id="trigger_a" type="reset" value=">" class="ondertitel" style="width:20px">
-                    <!--<script type="text/javascript">
-                    Calendar.setup({
-                      inputField     :    "aankomst",     // id of the input field
-                      ifFormat       :    "%Y-%m-%d",      // format of the input field
-                      button         :    "trigger_a",  // trigger for the calendar (button ID)
-                      align          :    "Bl",           // alignment (defaults to "Bl")
-                      singleClick    :    true
-                    });
-                  </script>	-->
-                </td>
-              </tr>
-              <tr>
-                <td><label>Vertrek *</label></td>
-                <td><input type="text" value="" readonly="" name="vertrek" id="vertrek" required>&nbsp;<input name="trigger_b" id="trigger_b" type="reset" value=">" class="ondertitel" style="width:20px">
-                    <!--<script type="text/javascript">
-                    Calendar.setup({
-                      inputField     :    "vertrek",     // id of the input field
-                      ifFormat       :    "%Y-%m-%d",      // format of the input field
-                      button         :    "trigger_b",  // trigger for the calendar (button ID)
-                      align          :    "Bl",           // alignment (defaults to "Bl")
-                      singleClick    :    true
-                    });
-                  </script>	-->
-                </td>
-              </tr>
-              <tr>
-                <td><label>Aantal</label></td>
-                <td><input name="single" id="single" value="" size="8" placeholder="0"> 
-                <p>x 1-persoons-kamer(s)</p>   
-              </tr>
-              <br>
-              <tr>
-                <td><a href="accomodaties-kamer.php"></a></td>
-                <td><input name="double" id="double" value="" size="8" placeholder="0">
-                <p>x 2-persoons-kamer(s)</p></td>
-              </tr>
-              <tr>
-                  <td><label>Extra bed van 13 jaar tot 18 jaar </label></td>
-                  <td><input size="8" type="checkbox" name="extrabed" id="extrabed" value="ja" placeholder="0"></td>
-                </tr>
-              <tr>
-                <td><label>Aantal *</label></td>
-                <td><input name="volwassenen" id="volwassenen" value="" size="8" placeholder="0" required> 
-                <p>volwassenen</p></td>
-              </tr>
-              <tr>
-                <td><label>Aantal *</label></td>
-                <td><input name="kinderen" id="kinderen" value="" size="8" placeholder="0" required>
-                  <p>kinderen (&lt; 13 jaar)</p></td>
-              </tr>
-              <tr>
-                <td><label>Babybedje</label></td>
-                <td><input size="8" type="checkbox" name="babybed" id="babybed" value="ja"></td>
-              </tr>
-              <tr>
-                <td><label>Extra bed op de kamer &lt; 13 jaar</label></td>
-                <td valign="top"><input size="8" type="checkbox" name="extrabed" id="extrabed" value="ja"></td>
-              </tr>
+<!--Aankomst *-->              
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Aankomst *</label>
+                    <input type="date" class="form-control" id="validationDefault01" required>
+                  </div>
+                </div>                 
+<!--Vertrek *-->              
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Vertrek *</label>
+                    <input type="date" class="form-control" id="validationDefault01" required>
+                  </div>
+                </div>  
+<!--Aantal 1-persoonskamer *-->              
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Aantal kamer(s) *</label>
+                    <input type="number" class="form-control" id="validationDefault01" placeholder="0" required>
+                    <p>x 1-persoons-kamer(s)</p>
+                  </div>
+                </div>  
+<!--Aantal 2 persoonskamer *-->              
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Aantal kamer(s) *</label>
+                    <input type="number" class="form-control" id="validationDefault01" placeholder="0" required>
+                    <p>x 2-persoons-kamer(s)</p>
+                  </div>
+                </div>  
 
-          </div>
-        </div>
+<!--Aantal personen *-->              
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Aantal volwassenen *</label>
+                    <input type="number" class="form-control" id="validationDefault01" placeholder="0" required>
+                  </div>
+                </div>  
+<!--Aantal kinderen *-->              
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Aantal kinderen *</label>
+                    <input type="number" class="form-control" id="validationDefault01" placeholder="0" required>
+                    <p>kinderen (&lt; 13 jaar)</p>
+                  </div>
+                </div>  
+<!--Babybed--> 
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Babybed</label>
+                    <input type="checkbox" class="form-control" id="validationDefault01">
+                  </div>
+                </div>
+<!--Extra bed--> 
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Extra bed op de kamer &lt; 13 jaar</label>
+                    <input type="checkbox" class="form-control" id="validationDefault01">
+                  </div>
+                </div>
+<!--Extra bed--> 
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Extra bed van 13 jaar tot 18 jaar</label>
+                    <input type="checkbox" class="form-control" id="validationDefault01">
+                  </div>
+                </div>
+
+            </div>
+
+<!--EXTRA VRAGEN EN INFO-->      
         <div class="box-invulformulier-bottom">
-          <div class="textaria-bottom">
-            <tr>
-                <td><h2>Vragen / Opmerkingen</h2></td>
+            <div class="textaria-bottom">
+               <tr>
+                  <td><h2>Extra vragen</h2></td>
               </tr>
-              <tr>
-                <td><textarea name="opmerking" cols="50" rows="8" id="opmerking"></textarea></td>
-              </tr>
-              <br>
-              <tr>
-                <td><input name="nieuwsbrief" type="checkbox" id="nieuwsbrief" value="ja" size="8" checked="checked">
-                <p>Ja, ik wil op de hoogte blijven van alle nieuws en/of aanbiedingen
-                van Hotel “Oude Eycke”</p>
-                </td>
-              </tr>
-              <br>
-              <!--<tr class="captcha">
-                <td colspan="2" valign="top"><a href="http://nl.wikipedia.org/wiki/Captcha" target="_blank"></a>
-                <input name="captcha" id="captcha" size="8" maxlength="4">
-                </td>
-              </tr>-->
-            
-              <tr>
-                <td><input class="submit-btn" type="submit" name="Submit" value=" Vraag of offerte " onclick="checkFrm();"></td>
-              </tr>
+<!--Extra info--> 
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <label for="validationDefault01">Vragen / Opmerkingen</label>
+                    <textarea name="opmerking" cols="100" rows="8" id="opmerking"></textarea>
+                  </div>
+                </div>
+<!--Op de hoogte blijven--> 
+                <div class="form-row">
+                  <div class="col-sm-2 col-form-label col-form-label-sm">
+                    <input type="checkbox" class="form-control" id="validationDefault01">
+                    <label for="validationDefault01">Ja, ik wil op de hoogte blijven van alle nieuws en/of aanbiedingen van Hotel “Oude Eycke”</label>
+                  </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+<!--Knop-->
+          <button class="btn btn-primary" type="submit">Verzenden</button>
+          </form> 
       </div>
     </div> 
 </section>
